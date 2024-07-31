@@ -185,7 +185,7 @@ section {
   font-size: 0.9rem;
 }
 /* extra run */
-.extra-run {
+.extra-run-wrapper {
   padding: 30px 55px;
   background-color: var(--section-bg);
   border-radius: 25px;
@@ -207,6 +207,7 @@ section {
 .extra-run-img img {
   border-radius: 22px;
 }
+/* BMI calculator */
 
 /* team section */
 .team-wrapper {
@@ -332,7 +333,7 @@ ul.footer-list-item li a {
   }
 
   /* extra run */
-  .extra-run {
+  .extra-run-wrapper {
     padding: 30px;
     flex-direction: column;
     gap: 25px;
