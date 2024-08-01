@@ -105,11 +105,17 @@ section {
   color: var(--secondary-color);
   padding: 8px 20px;
   border-radius: 40px;
+  transition: all 0.3s linear;
+}
+a.nav-link:hover {
+  background-color: var(--primary-color);
 }
 .nav-active-bg {
   background-color: var(--primary-color);
 }
-
+.nav-three-dot {
+  display: none;
+}
 /* banner start here */
 .banner-wrapper {
   justify-content: space-between;
@@ -142,9 +148,50 @@ section {
 }
 .banner-img {
   max-width: 340px;
+  margin-right: 65px;
   height: 580px;
+  position: relative;
 }
 
+.banner-video-box-one {
+  position: absolute;
+  background: #404040;
+  bottom: 70px;
+  left: -96px;
+  border-radius: 8px;
+  padding: 12px 15px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.banner-video-box-content h2,
+.video-box-two h2 {
+  color: var(--secondary-color);
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.banner-video-box-content span,
+.video-box-two span {
+  color: var(--para-color);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.red-dot {
+  width: 35px;
+  height: 35px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+.video-box-two {
+  position: absolute;
+  background: #404040;
+  top: 146px;
+  right: -64px;
+  border-radius: 8px;
+  padding: 12px 15px;
+  opacity: 0.9;
+}
 /* habits section */
 .habits-title,
 .team-title {
@@ -376,6 +423,23 @@ ul.footer-list-item li a {
   }
   .nav-links {
     display: none;
+  }
+  .banner-video-box-one {
+    bottom: 166px;
+    left: -15px;
+  }
+  .banner-video-box-content span,
+  .video-box-two span {
+    font-size: 0.8rem;
+  }
+  .video-box-two {
+    top: 30px;
+    right: -72px;
+  }
+  .nav-three-dot {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 20px;
   }
   /* banner */
   .banner-wrapper {
