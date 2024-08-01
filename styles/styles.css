@@ -208,7 +208,79 @@ section {
   border-radius: 22px;
 }
 /* BMI calculator */
+/* BMI HEADER */
+.bmi-header-title {
+  max-width: 704px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
+.bmi-header-title h3 {
+  margin-bottom: 16px;
+}
+/*  */
+.bmi-calculator-wrapper {
+  justify-content: space-between;
+}
+.bmi-calculator {
+  background-color: var(--section-bg);
+  padding: 40px;
+}
+.bmi-calc-title {
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.bmi-table,
+td,
+th {
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+.bmi-table th {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.bmi-table td {
+  color: var(--para-color);
+}
+.bmi-right-cal {
+  max-width: 610px;
+}
+.bmi-input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.grid-span {
+  grid-column: span 2;
+}
+.bmi-input input,
+select {
+  border: none;
+  outline: none;
+  background: #363636;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--para-color);
+  width: 100%;
+}
+input::placeholder,
+select,
+option {
+  color: var(--para-color);
+}
+.bmi-left-calc h4 {
+  margin-bottom: 60px;
+}
+.bmi-right-cal p {
+  margin: 14px 0 30px 0;
+}
+.bmi-right-cal > a {
+  margin-top: 32px;
+}
 /* team section */
 .team-wrapper {
   background: var(--section-bg);
@@ -281,6 +353,7 @@ ul.footer-list-item li a {
   font-weight: 500;
   font-size: 1.1rem;
 }
+
 /* mobile responsive */
 @media screen and (max-width: 575.98px) {
   /* shared style */
@@ -341,6 +414,23 @@ ul.footer-list-item li a {
   .extra-run-left-content .common-btn {
     padding: 15px 45px;
     max-width: 100%;
+  }
+  /* BMI calculator */
+  .bmi-calculator {
+    padding: 30px 8px;
+  }
+  .bmi-calculator-wrapper {
+    flex-direction: column;
+  }
+  .bmi-calc-title {
+    font-size: 1.2rem;
+  }
+  .bmi-left-calc h4 {
+    margin-bottom: 24px;
+  }
+  .bmi-right-cal {
+    max-width: 610px;
+    margin-top: 40px;
   }
   /* team here */
   .team-wrapper {
